@@ -1,0 +1,28 @@
+= content main
+  h2 Container Instances
+  table
+    thead
+      tr
+        th Instance ID
+        th Connected
+        th Status
+        th Registered Resources
+        th Available Resources
+
+    tbody
+      {{range .ContainerInstances}}
+        = include views/container_instance .
+      {{end}}
+
+  h2 Task Definitions
+  table
+    thead
+      tr
+        th Name
+        th Revision
+        th Container Definitions
+
+    tbody
+      {{range .TaskDefinitions}}
+        = include views/task_definition .
+      {{end}}

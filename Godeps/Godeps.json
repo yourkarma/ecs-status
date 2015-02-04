@@ -1,0 +1,51 @@
+{
+	"ImportPath": "github.com/yourkarma/ecs-status",
+	"GoVersion": "go1.4.1",
+	"Deps": [
+		{
+			"ImportPath": "github.com/BurntSushi/toml",
+			"Comment": "v0.1.0-9-g3883ac1",
+			"Rev": "3883ac1ce943878302255f538fce319d23226223"
+		},
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.6.2-5-g7096056",
+			"Rev": "7096056d3cab4d7d11436441f5fc2935cb1cf58c"
+		},
+		{
+			"ImportPath": "github.com/codegangsta/cli",
+			"Comment": "1.2.0-42-gfbda1ce",
+			"Rev": "fbda1ce02d5dabcee952040e5f4025753b6c9ce0"
+		},
+		{
+			"ImportPath": "github.com/juju/errors",
+			"Rev": "7a748941731116a391d328fd2ba9744f57efb51b"
+		},
+		{
+			"ImportPath": "github.com/stripe/aws-go/aws",
+			"Rev": "e8ad61ee613925915591aa0a97946fbf70f0a3f8"
+		},
+		{
+			"ImportPath": "github.com/stripe/aws-go/gen/ecs",
+			"Rev": "e8ad61ee613925915591aa0a97946fbf70f0a3f8"
+		},
+		{
+			"ImportPath": "github.com/stripe/aws-go/gen/endpoints",
+			"Rev": "e8ad61ee613925915591aa0a97946fbf70f0a3f8"
+		},
+		{
+			"ImportPath": "github.com/vaughan0/go-ini",
+			"Rev": "a98ad7ee00ec53921f08832bc06ecf7fd600e6a1"
+		},
+		{
+			"ImportPath": "github.com/yosssi/ace",
+			"Comment": "v0.0.4-33-g1f82044",
+			"Rev": "1f82044938a7180f6fb6bbb3a29688d1e6dbe74b"
+		},
+		{
+			"ImportPath": "github.com/yourkarma/mqttparty/log",
+			"Comment": "0.1-96-g1bf9e07",
+			"Rev": "1bf9e07b126f679f7a17bcadb1f0fbd72a273f20"
+		}
+	]
+}

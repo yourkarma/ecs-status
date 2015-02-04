@@ -1,0 +1,31 @@
+= doctype html
+html lang=en
+  head
+    title ECS Status
+
+    = css
+      body {
+        font-family: Helvetica Neue, Arial, sans-serif;
+        font-size: 13px;
+        padding: 0px 20px 0px 20px; }
+
+      table {
+        border-collapse: collapse; }
+        table thead th {
+          text-align: left;
+          border-bottom: 1px solid #ccc;
+          padding: 5px; }
+        table tbody td {
+          padding: 5px;
+          vertical-align: top;
+          border-bottom: 1px solid #ddd; }
+        table.small {
+          font-size: 12px; }
+          table.small tbody td {
+            padding: 0px 3px 0px 0px;
+            border-bottom: none; }
+
+  body
+    h1 ECS Status
+
+    = yield main

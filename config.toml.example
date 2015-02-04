@@ -1,0 +1,9 @@
+[http]
+  port = "8000"
+
+[ecs]
+  cluster_name = "your-ecs-cluster"
+
+[credentials]
+  access_key_id = "..."
+  secret_access_key = "..."

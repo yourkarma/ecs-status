@@ -1,0 +1,19 @@
+.PHONY: build build-linux build-docker run-docker
+
+ACCESS_KEY_ID=...
+SECRET_ACCESS_KEY=...
+CLUSTER_NAME=...
+
+defaut: build
+
+build:
+	godep go build -v -o bin/ecs-status
+
+build-linux:
+	GOOS=linux GOARCH=amd64 godep go build -v -o bin/ecs-status-linux
+
+build-docker: build-linux
+	docker build -t yourkarma/ecs-status .
+
+run-docker: build-docker
+	docker run -t -v "/etc/ssl/certs:/etc/ssl/certs" -e CLUSTER_NAME=$(CLUSTER_NAME) -e ACCESS_KEY_ID=$(ACCESS_KEY_ID) -e SECRET_ACCESS_KEY=$(SECRET_ACCESS_KEY) -p 8000:8000 yourkarma/ecs-status:latest

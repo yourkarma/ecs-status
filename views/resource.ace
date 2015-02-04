@@ -1,0 +1,6 @@
+table.small
+  {{range .}}
+    tr
+      td {{.Name}}:
+      td {{.IntegerValue}}
+  {{end}}

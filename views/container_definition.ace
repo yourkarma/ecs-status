@@ -1,0 +1,18 @@
+table.small
+  tr
+    td Name:
+    td {{.Name}}
+  tr
+    td Image:
+    td {{.Image}}
+  {{if .Command}}
+    tr
+      td Command:
+      td {{join .Command}}
+  {{end}}
+  tr
+    td CPU:
+    td {{.CPU}}
+  tr
+    td Memory:
+    td {{.Memory}}

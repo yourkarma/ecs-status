@@ -1,0 +1,8 @@
+tr
+  td
+    strong {{.Family}}
+  td {{.Revision}}
+  td
+    {{range .ContainerDefinitions}}
+      = include views/container_definition .
+    {{end}}
