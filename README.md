@@ -4,7 +4,9 @@
 
 We created this project because the AWS Console currently lacks [ECS](http://aws.amazon.com/ecs/) pages, and because using the CLI tools is painful if you want to have a quick overview of the status of your ECS cluster.
 
-This project provides just that: an ECS cluster status one-pager.
+This project provides just that: an ECS cluster status one-pager. It currently looks like this:
+
+![Screenshot](doc/screenshot.png)
 
 ## Installation
 
